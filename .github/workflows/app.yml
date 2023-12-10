@@ -31,4 +31,4 @@ jobs:
       if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
       run: poetry install --no-interaction --no-root
     - name: Run tests with pytest
-      run: .venv/bin/pytest --cov=renamer --cov-fail-under=95
+      run: .venv/bin/pytest --cov=refactoring_tool --cov-fail-under=95
