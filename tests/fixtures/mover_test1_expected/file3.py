@@ -1,4 +1,2 @@
-from file1 import fun
-from file2 import SomeClass
-
+from file1 import SomeClass, fun
 SomeClass()

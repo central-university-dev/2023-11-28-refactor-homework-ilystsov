@@ -1,8 +1,8 @@
-class NEW_CLASS:
+class SomeClass:
     ...
 
 
-def transform_class(SomeClass: list[NEW_CLASS]) -> NEW_CLASS:
+def transform_class(SomeClass: list[SomeClass]) -> SomeClass:
     tmp = SomeClass
 
     def simple_fun(*args) -> SomeClass:
@@ -18,12 +18,12 @@ def transform_class(SomeClass: list[NEW_CLASS]) -> NEW_CLASS:
 
     return tmp
 
-class cls2(NEW_CLASS):
+class cls2(SomeClass):
     ...
 
 
 x = lambda SomeClass: SomeClass + 1
-y = lambda _: NEW_CLASS
+y = lambda _: SomeClass
 
 
 def fun1():
@@ -37,9 +37,9 @@ class cls3:
 
 def main():
     x = cls3.SomeClass
-    a = [i for i in NEW_CLASS]
+    a = [i for i in SomeClass]
     b = [SomeClass for SomeClass in range(10)]
-    c = {i: NEW_CLASS for i in range(10)}
-    instance = NEW_CLASS()
-    transform_class(SomeClass=NEW_CLASS)
+    c = {i: SomeClass for i in range(10)}
+    instance = SomeClass()
+    transform_class(SomeClass=SomeClass)
 

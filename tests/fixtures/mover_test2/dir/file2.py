@@ -1,6 +1,3 @@
-from dir.subdir.file1 import fun
-from file3 import SomeClass
-
-
+from dir.subdir.file1 import SomeClass, fun
 def g():
     return (SomeClass(), fun)

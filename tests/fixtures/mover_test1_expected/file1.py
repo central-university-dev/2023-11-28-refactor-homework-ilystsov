@@ -1,9 +1,7 @@
-from file2 import SomeClass
-
-
+class SomeClass:
+    ...
 def fun():
     pass
-
 
 SomeClass()
 fun()

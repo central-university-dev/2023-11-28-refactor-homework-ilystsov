@@ -1,10 +1,5 @@
 import ast
-
-
-class SomeClass:
-    ...
-
-
+from file1 import SomeClass
 def fungen():
     ast.alias()
     SomeClass()
