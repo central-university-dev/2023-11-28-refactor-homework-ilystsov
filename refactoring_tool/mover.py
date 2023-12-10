@@ -255,12 +255,3 @@ class Mover:
 
                     with open(file_path, "w") as file:
                         file.write(updated_tree.code)
-
-
-mover = Mover(
-    "./tests/fixtures/mover_test2_expected",
-    "./tests/fixtures/mover_test2_expected/dir/subdir/file1.py",
-    "./tests/fixtures/mover_test2_expected/file3.py",
-    "SomeClass",
-)
-mover.move()

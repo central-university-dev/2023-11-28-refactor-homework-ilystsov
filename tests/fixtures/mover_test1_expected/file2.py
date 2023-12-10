@@ -1,5 +1,8 @@
 import ast
-from file1 import SomeClass
+
+class SomeClass:
+    ...
+
 def fungen():
     ast.alias()
     SomeClass()
